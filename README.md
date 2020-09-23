@@ -60,8 +60,7 @@ if __name__ == '__main__':
 
 ## Activity 3:
 
-Flask context globals are objects that act as global imports (i.e. `from flask import request`), but that contain information relevant to only the current request or application. After the import, view functions to access the HTTP request, session, and data without having to add positional (`args`) or keyword arguments (`kwargs`) to all view functions.
-
+Flask context globals are objects that act as global imports (i.e. `from flask import request`), but that contain information relevant to only the current request or application. After the import, view functions can access the HTTP request, session, and data without having to add positional (`args`) or keyword arguments (`kwargs`) to them.
 Summary of flask context globals
 
 | Variable name  | Context | Description  |
