@@ -58,7 +58,7 @@ if __name__ == '__main__':
 
 ![activity2](lab2/activity3.JPG)
 
-## Activity 3
+## Activity 3:
 
 Summary of flask context globals
 
