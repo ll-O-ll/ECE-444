@@ -5,34 +5,20 @@ Ahmed Rosanally
 
 ## Activity 1:
 
-- Navigate to https://bitbucket.org/pypa/setuptools
-- Obtain the script *ez_setup.py*
 - Install flask locally:
     + clone the flask repo:
       ```
       $ git clone https://github.com/miguelgrinberg/flasky.git
       $ cd flasky
-      $ git checkout 1a
+      $ git checkout 3e
       ```
-    + Using *virtualenv*:
+    + Modify index.html
       ```
-      $ virtualenv venv
-      ```
-    + On Microsoft do the following to activate the environment (obtaining a local Python intepreter)
-      ```
-      $ venv\Scripts\activate
-      ```
-    + Finally install flask:
-      ```
-      (venv) $ pip install flask
-      (venv) $ python
-      Python 3.8.1 (tags/v3.8.1:1b293b6, Dec 18 2019, 22:39:24) [MSC v.1916 32 bit (Intel)] on win32
-      Type "help", "copyright", "credits" or "license" for more information.
-      >>>
+      <h1>Hello World!</h1> -> <h1>Hello Ahmed!</h1>
       ```
 Expected output:
 
-![activity1](lab2/activity1.JPG)
+![activity1](lab3/activity1.JPG)
 
 ## Activity 2:
 
