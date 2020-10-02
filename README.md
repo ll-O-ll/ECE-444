@@ -18,7 +18,7 @@ Ahmed Rosanally
       ```
 Expected output:
 
-![activity1](lab3/activity1.JPG)
+![activity1](lab3/activity1.PNG)
 
 ## Activity 2:
 
