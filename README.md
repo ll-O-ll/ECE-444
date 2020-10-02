@@ -30,6 +30,6 @@ Ahmed Rosanally
 |-----|-------|
 | Relational databases | Document-oriented or key-value databases |
 | *Tables* that have a fixed number of *columns* and multiple *rows* | Use of *collections* instead of tables and *documents* instead of *records* (rows)|
-| Use Schemas i.e. high-level definition of databases | Schema-free |
+| Use of schemas i.e. high-level definition of databases | Schema-free |
 | Data stored efficiently, avoids data duplication (*normalization*) | Reduces the number of tables at the cost of data duplication (*denormalization*) which allows for faster querying |
 | 
