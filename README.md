@@ -20,7 +20,7 @@ Ahmed Rosanally
       ```
     + On Microsoft do the following to activate the environment (obtaining a local Python intepreter)
       ```
-      $ source venv/bin/activate
+      $ venv\Scripts\activate
       ```
     + Finally install flask:
       ```
