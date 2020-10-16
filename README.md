@@ -70,4 +70,4 @@ Docker containers resemble VMs in their ability to simulate an isolated operatin
 
 - Docker containers are smaller (~KB/MB) in file size and use less hardware resources such as CPU and RAM compared to VMs which can be in the GBs in file size and use more hardware resources.
 - Docker containers can be created in seconds while VMs can take more time to build.
-- In docker, multiple seperate containers can run with one host operating system (less isolation), where in a VMs need a completely separate and isolated operating system for each VM (more isolation).
+- In docker, multiple seperate containers can run with one host OS (require less isolation), where in a VMs need a completely separate and isolated OS for each VM (require more isolation).
