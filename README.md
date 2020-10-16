@@ -3,61 +3,65 @@ Ahmed Rosanally
 
 #### This repo is a clone of : https://github.com/miguelgrinberg/flasky
 
-## Activity 1:
+## How to build and start the system
 
-- Install flask locally:
-    + clone the flask repo:
-      ```
-      $ git clone https://github.com/miguelgrinberg/flasky.git
-      $ cd flasky
-      $ git checkout 3e
-      ```
-    + Modify index.html
-      ```
-      <h1>Hello World!</h1> -> <h1>Hello Ahmed!</h1>
-      ```
-Expected output:
+First modify the Dockerfile in lab3/flasky to the following:
 
-![activity1](lab3/activity1.PNG)
-
-## Activity 2:
-
-starter code:
-
-```python
-from flask import Flask
-app = Flask(__name__)
-
-
-@app.route('/')
-def index():
-    return '<h1>Hello World!</h1>'
-
-
-@app.route('/user/<name>')
-def user(name):
-    return '<h1>Hello, {}!</h1>'.format(name)
-
-if __name__ == '__main__':
-    app.run(debug=True)
+```docker
+FROM python:3.7	
+COPY . /app	
+WORKDIR /app	
+RUN pip install -r requirements.txt	
+ENTRYPOINT ["python3"]	
+CMD ["hello.py"]
 ```
 
-![activity2](lab2/activity3.JPG)
+Make sure to include the following dependencies in lab3/flasky/requirements.txt
 
-## Activity 3:
+```
+alembic==1.4.3
+black==20.8b1  # formatter
+blinker==1.4
+click==7.1.2
+dominate==2.5.2
+Flask==1.1.2
+Flask-Bootstrap==3.3.7.1
+Flask-Migrate==2.5.3
+Flask-Moment==0.10.0
+Flask-SQLAlchemy==2.4.4
+Flask-WTF==0.14.3
+itsdangerous==1.1.0
+Jinja2==2.11.2
+Mako==1.1.3
+MarkupSafe==1.1.1
+pylint==2.6.0  # linter
+python-dateutil==2.8.1
+python-editor==1.0.4
+six==1.15.0
+SQLAlchemy==1.3.19
+Werkzeug==1.0.1
+WTForms==2.3.3
+email-validator==1.1.1
+```
 
-Flask context globals are objects that act as global imports (i.e. `from flask import request`), but that contain information relevant to only the current request or application. After the import, view functions can access the HTTP request, session, and data without having to add positional (`args`) or keyword arguments (`kwargs`) to them.
+To build the system enter the following in the Windows command prompt
 
-#### Summary of flask context globals
+`docker build -t flask-sample:latest .`
 
-| Variable name  | Context | Description  |
-| ------ | -------------- | -------------| 
-| current_app | app context | The app instance for the active app | 
-| g | app context | An obj. that the app can use to temp. storage during the request handling. This var. is reset w/ each request | 
-| request | Request context | The request object, which encapsulates the contents of a HTTP request sent by a client | 
-| session | Request context | The user session, a dictionay that the app can use to store values that are "remembered" b/w requests. |
+To run the system enter the following in the Windows command prompt:
 
+`docker run -it --name flask-sample --rm -p 5000:5000 flask-sample`
 
+After running that command you should the following output in the command line:
 
+[image1](lab3/lab4-1.PNG)
+
+Browser output:
+
+[image2](lab3/lab4-2.PNG)
+
+To check the image:
+
+[image3](lab3/lab4-3.PNG)
 
 
