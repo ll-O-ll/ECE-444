@@ -54,14 +54,14 @@ To run the system enter the following in the Windows command prompt:
 
 After running that command you should the following output in the command line:
 
-[image1](lab3/lab4-1.PNG)
+![image1](lab3/lab4-1.PNG)
 
 Browser output:
 
-[image2](lab3/lab4-2.PNG)
+![image2](lab3/lab4-2.PNG)
 
 To check the image:
 
-[image3](lab3/lab4-3.PNG)
+![image3](lab3/lab4-3.PNG)
 
 
